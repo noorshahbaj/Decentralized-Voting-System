@@ -1,0 +1,30 @@
+truffle migrate
+
+truffle console
+compile
+browserify ./src/js/app.js -o ./src/dist/app.bundle.js
+node index.js
+
+cd Database_API
+python -m uvicorn main:app --reload --host 127.0.0.1
+
+admin:
+00793c2a-eb9e-11ee-9cfc-98e7f42795d7
+123
+rabbit
+
+user:
+fa1b9164-eb9e-11ee-9cfc-98e7f42795d7
+456
+starlord
+
+user:
+fa1b9164-eb9e-11ee-9cfc-98e7f42795d8
+789
+test
+
+MYSQL_USER="root"
+MYSQL_PASSWORD=""
+MYSQL_HOST="127.0.0.1"
+MYSQL_DB="voter_db"
+SECRET_KEY="d2b861a623b1d0e89f7c91c313bce1db34fbce8356ca80cf38b72e4c5a832ed5f0fa7136ef0ed5c32641308daa88c29c108d85835afcf37e5385c8e2c4cacee6"
