@@ -100,7 +100,7 @@
         cd Database_API
     then start the database server by following command
 
-        uvicorn main:app --reload --host 127.0.0.1
+        python -m uvicorn main:app --reload --host 127.0.0.1
 
 4. In a new terminal migrate the truffle contract to local blockchain
     
